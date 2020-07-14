@@ -34,19 +34,19 @@
                     {{ form.remember(class="form-check-input") }}
                     {{ form.remember.label(class="form-check-label") }}
                 </div>
+            </fieldset>
                 <div class="form-group">
                     {{ form.submit(class="butn btn-outline-info") }}
                 </div>
                 <small class="text muted ml-2">
                     <a href="#">Forgot Password?</a>
                 </small>
-            </fieldset>
         </form>
-        <div class="botder-top pt-3">
-            <small class="text-muted">
-                Need An Account? <a class="ml-2" href="{{ url_for('register') }}">Sign Up Now</a>
-            </small>
-        </div>
     </div>
+    <div class="botder-top pt-3">
+        <small class="text-muted">
+            Need An Account? <a class="ml-2" href="{{ url_for('register') }}">Sign Up Now</a>
+        </small>
+        </div>
     
 {% endblock content %}
